@@ -1,0 +1,33 @@
+body {
+   margin: 0;
+   padding: 0;
+   background-color: aliceblue;
+}
+
+.logo-alura {
+   padding: 1em;
+}
+
+main {
+   margin: auto;
+   padding: 2em;
+   display: flex;
+}
+
+section {
+   text-align: center;
+}
+
+.encrypt-text {
+   width: 65%;
+   align-content: space-between;
+}
+
+textarea {
+   border-style: none;
+   margin: 1rem;
+}  
+
+.decrypt-text {
+   width: 35%;
+}

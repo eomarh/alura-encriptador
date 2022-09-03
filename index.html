@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,31 +10,42 @@
    <script src="./script.js"></script>
    <title>Alura - Encriptador</title>
 </head>
+
 <body>
-   
-   <header>
+
+   <header class="logo-alura">
       <img src="./img/Logo@2x.svg" alt="logo-alura-latam">
    </header>
-   
+
    <main>
-      <section>
-         <textarea name="txa-frase" id="txa-frase" cols="30" rows="10"></textarea>
-         <button>
-            Encriptar
-         </button>
-         <button>
-            Desencriptar
-         </button>
+      <section class="encrypt-text">
+         <textarea name="input-text" id="txa-frase" cols="30" rows="10"></textarea>
+         <div class="buttons">
+            <span>
+               <p>Solo letras minúsculas y sin acentos.</p>
+            </span>
+            <button>
+               Encriptar
+            </button>
+            <button>
+               Desencriptar
+            </button>
+         </div>
       </section>
-      <aside>
+      <section class="decrypt-text">
          <img src="./img/Muñeco.svg" alt="munheco">
-         <span>Ningun mensaje fue encontrado</span>
-         <span>Ingrese el texto que desea encriptar o desencriptar</span>
-      </aside>
+         <span>
+            <p>Ningun mensaje fue encontrado</p>
+         </span>
+         <span>
+            <p>Ingrese el texto que desea encriptar o desencriptar</p>
+         </span>
+      </section>
    </main>
 
    <footer>
    </footer>
 
 </body>
+
 </html>
