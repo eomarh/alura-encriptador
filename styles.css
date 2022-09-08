@@ -1,33 +1,88 @@
 body {
    margin: 0;
    padding: 0;
-   background-color: aliceblue;
+   background-color: #E5E5E5;
+   height: 100%;
+   font-family: 'Roboto', 'sans-serif';
+   font-size: 15px;
 }
 
 .logo-alura {
-   padding: 1em;
+   padding: 0.5em;
 }
 
 main {
    margin: auto;
    padding: 2em;
    display: flex;
+   height: 80vh;
 }
 
 section {
    text-align: center;
 }
 
+/*Section to encrypt*/
 .encrypt-text {
    width: 65%;
    align-content: space-between;
 }
 
 textarea {
+   background-color:#E5E5E5;
    border-style: none;
    margin: 1rem;
-}  
+   font-size: x-large;
+   color: darkblue;
+   font-family: 'Roboto', 'sans-serif';
 
+   resize: none;
+
+}
+
+textarea::placeholder {
+   font-family: 'Roboto','sans-serif';
+   color: darkblue;
+}
+
+textarea:focus {
+   outline: none;
+}
+
+.buttons {
+   margin: 2em;
+   margin-top: 10em;
+}
+
+.buttons h6{
+   text-align: left;
+   margin-left: 33em;
+}
+
+.principal-btn {
+   width: 18em;
+   height: 4em;
+   color: whitesmoke;
+   border-radius: 25px;
+   border: 1px solid darkblue;
+   background-color: darkblue;
+}
+
+.secondary-btn {
+   width: 18em;
+   height: 4em;
+   margin-left: 2em;
+   color: darkblue;
+   border-radius: 25px;
+   border: 1px solid darkblue;
+   background-color: #D8DFE8;
+}
+
+/*Section of decrypt*/
 .decrypt-text {
    width: 35%;
+}
+
+section > img {
+   margin-bottom: 15em;
 }
