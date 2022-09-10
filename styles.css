@@ -13,7 +13,7 @@ body {
 
 main {
    margin: auto;
-   padding: 2em;
+   padding: 2em 7em;
    display: flex;
    height: 80vh;
 }
@@ -54,9 +54,17 @@ textarea:focus {
    margin-top: 10em;
 }
 
+button {
+   transition: transform .3s;
+}
+
+button:hover {
+   transform: scale(1.05);
+}
+
 .buttons h6{
    text-align: left;
-   margin-left: 33em;
+   margin-left: 25%;
 }
 
 .principal-btn {
@@ -79,10 +87,25 @@ textarea:focus {
 }
 
 /*Section of decrypt*/
-.decrypt-text {
+.undecrypt-text {
    width: 35%;
 }
 
 section > img {
    margin-bottom: 15em;
+}
+
+.decrypt-text {
+   width: 32%;
+   background-color: white;
+   border-radius: 2em;
+   box-shadow: 5px 5px 50px black;
+}
+
+.decrypt-text textarea {
+   background-color: white;
+}
+
+.decrypt-text .secondary-btn {
+   margin-top: 2em;  
 }

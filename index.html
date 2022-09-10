@@ -10,7 +10,6 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-   <script src="./script.js"></script>
    <title>Alura - Encriptador</title>
 </head>
 
@@ -21,22 +20,22 @@
    </header>
 
    <main>
-      <section class="encrypt-text">
+      <section id="encrypt-text" class="encrypt-text">
          <textarea name="input-text" id="txa-frase" cols="80" rows="15"
             placeholder="Introduce el texto a encriptar"></textarea>
          <div class="buttons">
             <span>
                <h6>Solo letras minúsculas y sin acentos.</h6>
             </span>
-            <button class="principal-btn">
-               Encriptar   
+            <button class="principal-btn" onclick="btnEncriptar()">
+               Encriptar
             </button>
-            <button class="secondary-btn">
+            <button class="secondary-btn" onclick="btnDecrypt()">
                Desencriptar
             </button>
          </div>
       </section>
-      <section class="decrypt-text">
+      <section id="undecrypt-text" class="undecrypt-text" style="display: inline;">
          <img src="./img/Muñeco.svg" alt="munheco">
          <span>
             <h2 class="advice-text">Ningun mensaje fue encontrado</h2>
@@ -45,10 +44,18 @@
             <h3 class="information-text">Ingrese el texto que desea encriptar o desencriptar</h3>
          </span>
       </section>
+      <section id="decrypt-text" class="decrypt-text" style="display: none;">
+         <textarea name="output-text" id="txa-frase-decrypt" cols="40" rows="20"></textarea>
+         <button class="secondary-btn" onclick="copy()">
+            Copiar
+         </button>
+      </section>
    </main>
 
    <footer>
    </footer>
+
+   <script src="./script.js"></script>
 
 </body>
 
